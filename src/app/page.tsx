@@ -1,39 +1,20 @@
-import Image from "next/image";
+import Head from 'next/head';
+import HeroSection from 'components/HeroSection';
+import FeaturesSection from 'components/FeaturesSection';
+import CTA from 'components/CTA';
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="flex">
-        <h1 className="text-4xl">
-          Welcome to Umusare
-        </h1>
-        <p className="text-lg text-center sm:text-left">
-          A place where you can find the best sailor in the world.
-        </p>
-        <div className="flex">
-          <Image
-            src="/driver.png"
-            alt="Sailor"
-            width={200}
-            height={200}
-          />
-          <Image
-            src="/driver.png"
-            alt="Sailor"
-            width={200}
-            height={200}
-          />
-          <Image
-            src="/driver.png"
-            alt="Sailor"
-            width={200}
-            height={200}
-          />
-        </div>
+    <>
+      <Head>
+        <title>My Awesome Landing Page</title>
+        <meta name="description" content="A modern landing page built with Next.js" />
+      </Head>
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <CTA />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <p>Copyright &copy; 2025 Umusaare</p>
-      </footer>
-    </div>
+    </>
   );
 }
