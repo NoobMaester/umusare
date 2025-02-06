@@ -9,13 +9,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string): void => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string): void => {
+  //   e.preventDefault();
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   return (
     <nav className="navbar">
@@ -25,8 +25,8 @@ export default function Navbar() {
         </Link>
         <ul className="nav-links">
           <li>
-            <Link href="#features" onClick={(e) => handleScroll(e, 'features')}>
-              Features
+            <Link href="/agents" className={pathname === '/agents' ? 'active' : ''}>
+              Agents
             </Link>
           </li>
           <li>
