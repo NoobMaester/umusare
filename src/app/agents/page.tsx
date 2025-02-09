@@ -27,7 +27,7 @@ export default async function AgentsPage() {
       <ul className="agents-list">
         {Agents.map((agent: Agent) => (
           <li key={agent.email}>
-            <Link href={{ pathname: `/agents`, query: { agentId: agent.email } }}>
+            <Link href={`/agent?email=${agent.email}`} passHref>
               <div className="agent-card">
                 <Image
                   src={agent.picture.large}
