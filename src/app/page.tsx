@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Awesome Landing Page</title>
+        <title>Umusare Landing Page</title>
         <meta name="description" content="A modern landing page built with Next.js" />
       </Head>
       <main>

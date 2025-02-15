@@ -1,15 +1,13 @@
-import Link from "next/link";
+
 
 export default function HeroSection() {
   return (
-    <section className="hero">
-      <div className="container">
-        <h1>Welcome to My Awesome Product</h1>
+    <section className="container">
+      <div className="hero">
+        <h1>Friends do not let friends drive drunk. Your destination is our commitment. &quot;navigating the road to excellence.&quot;</h1>
         <p>Your solution to all problems!</p>
-        <Link href="/register" className="cta-button">
-          Get Started
-        </Link>
       </div>
+
     </section>
   );
 }

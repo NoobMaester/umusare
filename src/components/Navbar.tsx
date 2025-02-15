@@ -18,9 +18,9 @@ export default function Navbar() {
   // };
 
   return (
-    <nav className="navbar">
-      <div className="container">
-        <Link href="/" className="logo">
+    <nav className="container">
+      <div className='nav'>
+        <Link href="/" className='logo'>
           Umusaare
         </Link>
         <ul className="nav-links">
