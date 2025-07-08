@@ -9,64 +9,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-image: url('../../public/car-dashboard-lit-red-with-steering-wheel-night.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.container {
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo{
-  color: #fff;
-  text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: bold;
-
-}
-.nav-links{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-links li{
-  list-style: none;
-  margin-right: 10px;
-  padding: 1rem;
-}
-.nav-links a{
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-.nav-links a:hover{
-  border-bottom: 2px solid #fff;
-}
-.nav-links a.active{
-  border-bottom: 2px solid #fff;
 }
 
-.hero{
-  display: flex;
-  margin: 2rem 0;
-  justify-content: space-between;
-}
-.hero h1{
-
-  font-size: 2.5rem;
-  width: 30%;
-  color: #fff;
-}
-
-
-footer {
-  color: #fff;
-  text-align: center;
-}
+/* Remove .container, .nav, .logo, .nav-links, .hero, and footer custom styles. Tailwind will handle these. */
